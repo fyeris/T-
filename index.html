@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フェリスの自己紹介</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ヘッダー（上の箱） -->
+  <header class="box header-box">
+    <h1>⚔フェリスのプロフィール⚔</h1>
+    <p>毎日寝不足な僕のプロフィールだよ</p>
+    
+    <!-- 項目ボタン（ナビゲーション） -->
+    <nav class="nav-buttons">
+      <a href="#profile" class="nav-btn">基本情報</a>
+      <a href="#hobby" class="nav-btn">好きなこと</a>
+      <a href="#message" class="nav-btn">ひとこと</a>
+      <a href="#schedule" class="nav-btn">スケジュール</a>
+      <a href="#contact" class="nav-btn">お問い合わせ</a>
+      <a href="chat.html" class="nav-btn">💬 チャットで話す</a>
+    </nav>
+  </header>
+
+  <!-- メインエリア -->
+  <main class="container">
+    
+    <!-- 基本情報（箱1） -->
+    <section id="profile" class="box profile-box">
+      <h2>⚔基本情報⚔</h2>
+      <ul>
+        <li><strong>名前：</strong> フェリス</li>
+        <li><strong>職業：</strong> コード手打ち練習中</li>
+        <li><strong>年齢：</strong> 18歳</li>
+        <li><strong>出身地：</strong> 愛知県</li>
+      </ul>
+    </section>
+
+    <!-- 好きなもの・特技（箱2） -->
+    <section id="hobby" class="box hobby-box">
+      <h2>⚔好きなこと・特技⚔</h2>
+      <ul>
+        <li>コード手打ち</li>
+        <li>スマホをいじること</li>
+        <li>ゲームをすること</li>
+        <li>ゲーム制作中</li>
+      </ul>
+    </section>
+
+    <!-- 一言メッセージ（箱3） -->
+    <section id="message" class="box message-box">
+      <h2>⚔ひとこと⚔</h2>
+      <p>昼夜逆転状態であり、徹夜はたまにやっています。</p>
+    </section>
+
+    <!-- スケジュール表セクション（箱4） -->
+    <section id="schedule" class="box schedule-box">
+      <h2>⚔仮作成週間スケジュール⚔</h2>
+      <div class="table-wrapper">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>曜日</th>
+              <th>午前</th>
+              <th>午後</th>
+              <th>夜・自由時間</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>月曜日</strong></td>
+              <td>大学の講義</td>
+              <td>大学の講義 / 課題</td>
+              <td>プログラミング学習</td>
+            </tr>
+            <tr>
+              <td><strong>火曜日</strong></td>
+              <td>大学の講義</td>
+              <td>自習・研究</td>
+              <td>ゲーム開発</td>
+            </tr>
+            <tr>
+              <td><strong>水曜日</strong></td>
+              <td>大学の講義</td>
+              <td>自主学習</td>
+              <td>UI・デザイン探求</td>
+            </tr>
+            <tr>
+              <td><strong>木曜日</strong></td>
+              <td>大学の講義</td>
+              <td>自習・課題</td>
+              <td>コード打ち</td>
+            </tr>
+            <tr>
+              <td><strong>金曜日</strong></td>
+              <td>大学の講義</td>
+              <td>自由活動</td>
+              <td>Web開発・趣味</td>
+            </tr>
+            <tr>
+              <td><strong>土曜日</strong></td>
+              <td colspan="2">趣味ゲーム</td>
+              <td>リフレッシュ / 自由</td>
+            </tr>
+            <tr>
+              <td><strong>日曜日</strong></td>
+              <td colspan="2">休息・趣味のゲーム</td>
+              <td>次週の準備</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- お問い合わせセクション（箱5） -->
+    <section id="contact" class="box contact-box">
+      <h2>⚔お問い合わせ・メッセージ⚔</h2>
+      
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="nameInput">お名前 (Name)</label>
+          <input type="text" id="nameInput" required placeholder="例：山田 太郎" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="emailInput">メールアドレス (Email)</label>
+          <input type="email" id="emailInput" required placeholder="例：taro@example.com" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="topicSelect">お問い合わせ種別</label>
+          <select id="topicSelect" class="form-input">
+            <option value="work">お仕事の依頼</option>
+            <option value="chat">技術的な情報交換</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <span class="form-label">どちらでこのページを知りましたか？</span>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="source" value="sns" checked> SNS
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="source" value="search"> 検索エンジン
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="source" value="friend"> 知人の紹介
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="messageTextarea">メッセージ内容 (Message)</label>
+          <textarea id="messageTextarea" rows="4" required placeholder="メッセージをご記入ください..." class="form-input"></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="nav-btn submit-btn">送信する</button>
+        </div>
+      </form>
+      
+      <div id="successMessage" class="success-message hidden">
+        メッセージが正常に送信されました！ご対応ありがとうございます。
+      </div>
+    </section>
+
+  </main>
+
+  <!-- フッター（下の箱） -->
+  <footer class="box footer-box">
+    <p>&copy; 2026 fyeris profile</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
